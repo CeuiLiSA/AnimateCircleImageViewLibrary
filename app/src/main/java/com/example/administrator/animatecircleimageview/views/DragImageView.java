@@ -54,7 +54,6 @@ public class DragImageView extends RelativeLayout {
     public void setImageResource(Bitmap bitmap)
     {
         imageResource = bitmap;
-
         mIvList = new ArrayList<>();
         for (int i = 0; i < circleViewsCount; i++) {
             AnimateImageViewItem circleImageView = new AnimateImageViewItem(mContext);
@@ -70,15 +69,13 @@ public class DragImageView extends RelativeLayout {
             }
             mIvList.add(circleImageView);
         }
-
         mViewTrackController.init(mIvList);
     }
 
     @Override
     protected void onFinishInflate() {
         super.onFinishInflate();
-        params = new LayoutParams(
-                ScreenUtil.dip2px(mContext, circleImgRadius), ScreenUtil.dip2px(mContext, circleImgRadius));
+        params = new LayoutParams(ScreenUtil.dip2px(mContext, circleImgRadius), ScreenUtil.dip2px(mContext, circleImgRadius));
         params.topMargin = ScreenUtil.dip2px(mContext, topMargin);
         params.leftMargin = ScreenUtil.getScreenWidth(mContext) / 2 - ScreenUtil.dip2px(mContext, circleImgRadius) / 2;
     }
