@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DragImageView">
+        <!--在attr标签下设置需要的自定义属性-->
+        <!--此处定义了一个设置图形的颜色:circle_color属性,格式是color,代表颜色-->
+        <!--格式有很多种,如资源id(reference)等等-->
+        <attr name="circleImgBorder" format="integer"/>
+        <attr name="circleImgRadius" format="integer"/>
+        <attr name="topMargin" format="integer"/>
+        <attr name="circleViewsCount" format="integer"/>
+        <attr name="circleImgBorderColor" format="color"/>
+
+    </declare-styleable>
+</resources>
