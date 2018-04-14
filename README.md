@@ -6,7 +6,8 @@
 
 ![截图](https://github.com/CeuiLiSA/images/blob/master/ScreenRecord_2018-04-12-15-53-23.gif)
 
-#How to use
+# How to use
+
 Step 1. Add the JitPack repository to your build file
 ~~~
 allprojects {
