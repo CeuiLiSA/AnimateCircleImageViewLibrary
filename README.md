@@ -10,18 +10,18 @@
 Step 1. Add the JitPack repository to your build file
 ~~~
 allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-	}
+    repositories {
+	...
+	maven { url 'https://jitpack.io' }
+    }
+}
 ~~~
 
 Step 2. Add the dependency
 ~~~
 dependencies {
-	        implementation 'com.github.CeuiLiSA:AnimateCircleImageViewLibrary:1.0.1'
-	}
+    implementation 'com.github.CeuiLiSA:AnimateCircleImageViewLibrary:1.0.1'
+}
 ~~~
 
 Step 3. use it in xml
@@ -47,7 +47,6 @@ xml定义：
 Step 4. in xxx.class
 ~~~
 public class MainActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
