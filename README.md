@@ -46,6 +46,8 @@ xml定义：
 ~~~
 
 Step 4. in xxx.class
+
+加载本地图片：
 ~~~
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -58,4 +60,36 @@ public class MainActivity extends AppCompatActivity {
         dragImageView.setImageResource(bitmap);
     }
 }
+~~~
+
+加载网络图片：
+
+~~~
+public class MainActivity extends AppCompatActivity {
+
+    private DragImageView mDragImageView;
+    private static final String url =
+            "https://i.pximg.net/c/480x960/img-master/img/2018/03/18/00/00/03/67786060_p0_master1200.jpg";
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        mDragImageView = findViewById(R.id.my_image_view);
+        Glide.with(this).load(url).asBitmap().into(new SimpleTarget<Bitmap>() {
+            @Override
+            public void onResourceReady(Bitmap resource, GlideAnimation<? super Bitmap> glideAnimation) {
+                mDragImageView.setImageResource(resource);
+            }
+        });
+    }
+}
+~~~
+
+使用到的开源库：
+~~~
+implementation 'de.hdodenhof:circleimageview:2.2.0'
+implementation 'com.facebook.rebound:rebound:0.3.8'
+implementation 'com.github.bumptech.glide:glide:3.8.0'
 ~~~
