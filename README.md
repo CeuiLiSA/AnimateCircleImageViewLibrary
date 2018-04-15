@@ -26,7 +26,6 @@ dependencies {
 ~~~
 
 Step 3. use it in xml
-xml定义：
 ~~~
 <?xml version="1.0" encoding="utf-8"?>
 <com.example.administrator.mycircleimgview.views.DragImageView
