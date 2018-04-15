@@ -28,20 +28,26 @@ dependencies {
 Step 3. use it in xml
 ~~~
 <?xml version="1.0" encoding="utf-8"?>
-<com.example.administrator.mycircleimgview.views.DragImageView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/my_image_view"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    app:circleImgBorderColor="@color/colorAccent"
-    app:circleImgRadius="110"
-    app:circleImgBorder="3"
-    app:topMargin="200"
-    app:circleViewsCount="5">
+    android:layout_height="match_parent">
 
+    <com.example.administrator.animatecircleimageview.views.DragImageView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/my_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:circleImgBorder="3"
+        app:circleImgBorderColor="@color/colorAccent"
+        app:circleImgRadius="110"
+        app:circleViewsCount="5"
+        app:topMargin="200">
+        
+    </com.example.administrator.animatecircleimageview.views.DragImageView>
 
-</com.example.administrator.mycircleimgview.views.DragImageView>
+</android.support.constraint.ConstraintLayout>
 ~~~
 
 Step 4. in xxx.class
