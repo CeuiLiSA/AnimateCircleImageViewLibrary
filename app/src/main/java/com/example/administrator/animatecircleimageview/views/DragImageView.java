@@ -130,7 +130,7 @@ public class DragImageView extends RelativeLayout {
         if (event.getAction() == MotionEvent.ACTION_DOWN && clickInAvatarView(event)) {
             return true;
         }
-        return mDragHelper.shouldInterceptTouchEvent(event);
+        return false;
     }
 
     @Override
