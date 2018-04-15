@@ -28,14 +28,10 @@ dependencies {
 Step 3. use it in xml
 ~~~
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <com.example.administrator.animatecircleimageview.views.DragImageView xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+<com.example.administrator.animatecircleimageview.views.DragImageView 
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:app="http://schemas.android.com/apk/res-auto"
+    	xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/my_image_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -45,9 +41,7 @@ Step 3. use it in xml
         app:circleViewsCount="5"
         app:topMargin="200">
         
-    </com.example.administrator.animatecircleimageview.views.DragImageView>
-
-</android.support.constraint.ConstraintLayout>
+</com.example.administrator.animatecircleimageview.views.DragImageView>
 ~~~
 
 Step 4. in xxx.class
