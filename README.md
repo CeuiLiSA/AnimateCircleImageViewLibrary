@@ -21,7 +21,7 @@ allprojects {
 Step 2. Add the dependency
 ~~~
 dependencies {
-    implementation 'com.github.CeuiLiSA:AnimateCircleImageViewLibrary:1.0.1'
+    implementation 'com.github.CeuiLiSA:AnimateCircleImageViewLibrary:1.1.0'
 }
 ~~~
 
