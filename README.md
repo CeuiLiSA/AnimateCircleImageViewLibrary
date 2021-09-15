@@ -39,9 +39,7 @@ Step 3. use it in xml
         app:circleImgBorderColor="@color/colorAccent"
         app:circleImgRadius="110"
         app:circleViewsCount="5"
-        app:topMargin="200">
-        
-</com.example.administrator.animatecircleimageview.views.DragImageView>
+        app:topMargin="200"/>
 ~~~
 
 Step 4. in xxx.class
